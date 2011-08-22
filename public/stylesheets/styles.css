@@ -1,0 +1,114 @@
+body{
+	font-family: "Trebuchet MS"
+}
+#splash-img {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	min-height: 768px;
+	min-width: 1024px;
+}
+#sign-up {
+	background-image: url(../images/center-bg.png);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -317px;
+	margin-left: -427px;
+	height: 633px;
+	width: 719px;
+}
+#contact {
+	position: relative;
+	top: 410px;
+	left: 245px;
+}
+#submit {
+	background-color: #AF7736;
+	position: relative;
+	top: 428px;
+	left: 470px;
+	width: 170px;
+	height: 40px;
+	border-radius: 4px;
+	color: #fff;
+	font-family: "Trebuchet MS";
+	font-size: 22px;
+	cursor: pointer;
+}
+#submit:hover {
+	background-color: #af6624;
+}
+#submit:active {
+	background-color: #9e6635;
+}
+#submit span {
+	position: relative;
+	top: 7px;
+	left: 52px;
+}
+label {
+	color: #fff;
+	font-family: "Trebuchet MS";
+	font-size: 22px;
+	margin-right: 4px;
+}
+input[type="text"] {
+	height: 22px;
+	width: 170px;
+	color: #AF7736;
+	font-family: Helvetica;
+	font-size: 85%;
+	box-shadow: 1px 1px 2px #777;
+	border-radius: 3px;
+	border: none;
+}
+input[type="text"]:hover {
+	box-shadow: 1px 1px 2px #aaa;
+}
+td#right {
+	text-align: right;
+}
+tr {
+	height: 35px;
+}
+input#user_submit {
+	background: none;
+	border: none;
+	font-family: "Trebuchet MS";
+	font-size: 22px;
+	line-height: 22px;
+	color: #FFF;
+	margin: 0px;
+	padding: 0px;
+}
+#thank-you {
+	background-image: url(../images/center-bg-ty.png);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -317px;
+	margin-left: -427px;
+	height: 633px;
+	width: 719px;
+}
+#thank-you-msg {
+	position: relative;
+	top: 200px;
+	left: 123px;
+	color: #fff;
+	font-size: 20px;
+	width: 540px;
+}
+#thank-you-msg h1{
+	font-size: 40px;
+}
+input.error{
+	border: 1px solid orangered;
+}
+label.error{
+	color: orangered;
+	font-size: 15px;
+}
