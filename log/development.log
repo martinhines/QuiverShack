@@ -27,3 +27,4043 @@ Migrating to CreateUsers (20110816155158)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 11:28:13 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (4.9ms)
+Rendered users/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 11:34:54 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 12:20:11 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 12:28:55 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 12:35:21 -0400 2011
+
+SyntaxError (/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/users_controller.rb:13: syntax error, unexpected '\n', expecting tASSOC):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 12:35:56 -0400 2011
+  Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `home_path' for #<UsersController:0x10cb623c8>):
+  app/controllers/application_controller.rb:11:in `authorize'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 12:37:15 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:37:15 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.7ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 12:37:21 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:37:21 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.5ms)
+Rendered users/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 12:37:36 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 12:37:49 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:37:49 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.4ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 12:41:37 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"eopVBfT5t4aS5I+7zbiELhurT38lbHk8ul4YBHU7JX4=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"Lucas", "first_name"=>"Ryan", "email"=>"test@test.com"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:41:37 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.1ms)
+Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 12:43:05 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"eopVBfT5t4aS5I+7zbiELhurT38lbHk8ul4YBHU7JX4=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"das", "first_name"=>"adg", "email"=>"mhines@lmnop.com"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'mhines@lmnop.com') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("last_name", "created_at", "email", "updated_at", "first_name") VALUES ('das', '2011-08-22 16:43:05.875584', 'mhines@lmnop.com', '2011-08-22 16:43:05.875584', 'adg')[0m
+Redirected to http://0.0.0.0:3000/thankyou
+Completed 302 Found in 40ms
+
+
+Started GET "/thankyou" for 127.0.0.1 at Mon Aug 22 12:43:05 -0400 2011
+  Processing by UsersController#thankyou as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY users.id DESC LIMIT 1
+Rendered users/thankyou.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 12:44:16 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:44:16 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.2ms)
+Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 47ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 12:44:32 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"eopVBfT5t4aS5I+7zbiELhurT38lbHk8ul4YBHU7JX4=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"asfd", "first_name"=>"asdfg", "email"=>"mhines76@gmail.co"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:44:32 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.4ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"eopVBfT5t4aS5I+7zbiELhurT38lbHk8ul4YBHU7JX4=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"asdf", "first_name"=>"kljb", "email"=>"test@test.co"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 39ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 12:45:12 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:35 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:36 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:36 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:36 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:36 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:36 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:36 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:36 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:36 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:36 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:39 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:44 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:47 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:47 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:47 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:47 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:47 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:47 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:47 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:47 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:05:48 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:09 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:09 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:09 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:10 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 13:06:26 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.0ms)
+Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 16:07:06 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:07:06 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.9ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:07:40 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.1ms)
+Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 16:07:44 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 46ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 16:09:08 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Mon Aug 22 16:09:20 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.8ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 16:10:20 -0400 2011
+
+SyntaxError (/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/users_controller.rb:3: syntax error, unexpected '\n', expecting tASSOC):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 16:11:02 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"hjbdsg", "first_name"=>"ekjbf", "email"=>"m@m.com"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'm@m.com') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "created_at", "first_name", "updated_at", "last_name") VALUES ('m@m.com', '2011-08-22 20:11:02.288718', 'ekjbf', '2011-08-22 20:11:02.288718', 'hjbdsg')[0m
+Redirected to http://0.0.0.0:3000/thankyou
+Completed 302 Found in 58ms
+
+
+Started GET "/thankyou" for 127.0.0.1 at Mon Aug 22 16:11:02 -0400 2011
+  Processing by UsersController#thankyou as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY users.id DESC LIMIT 1
+Rendered users/thankyou.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 16:11:15 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:11:54 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.6ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 35ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 16:12:09 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>";giouh", "first_name"=>"Malkdsgh", "email"=>"m@m.com"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:12:09 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.7ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 16:12:30 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"shr", "first_name"=>"sdg", "email"=>"martin.hines@mminc.net"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:12:30 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.5ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:16:27 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.1ms)
+Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 16:16:35 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:16:35 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.5ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:17:45 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:18:01 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.0ms)
+Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/thankyou" for 127.0.0.1 at Mon Aug 22 16:18:07 -0400 2011
+  Processing by UsersController#thankyou as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY users.id DESC LIMIT 1
+Rendered users/thankyou.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Aug 22 16:18:11 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:18:11 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.5ms)
+Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 16:18:32 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"smith", "first_name"=>"john", "email"=>"js3434@lsdld.com"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:18:32 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.2ms)
+Rendered users/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:19:21 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.2ms)
+Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 22 16:19:31 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"kbkhb", "first_name"=>"bkhb", "email"=>"jsjsjsj@ijoij.com"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 22 16:19:31 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.4ms)
+Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 09:53:58 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.0ms)
+Rendered users/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:07:16 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (4.6ms)
+Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Aug 23 11:07:29 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"you", "first_name"=>"me", "email"=>"us@we.com"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:07:29 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.8ms)
+Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:07:43 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.3ms)
+Rendered users/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:08:01 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (4.3ms)
+Rendered users/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Aug 23 11:08:34 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"de", "first_name"=>"Martin", "email"=>"martin.hines@mminc.coewgn"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:08:34 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.4ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:07 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:09:43 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.5ms)
+Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Aug 23 11:10:04 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"ewrt", "first_name"=>"wetry", "email"=>"martin.hindagfes@mminc.co"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'martin.hindagfes@mminc.co') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "updated_at", "created_at") VALUES ('wetry', 'ewrt', 'martin.hindagfes@mminc.co', '2011-08-23 15:10:04.719230', '2011-08-23 15:10:04.719230')[0m
+Redirected to http://0.0.0.0:3000/thankyou
+Completed 302 Found in 110ms
+
+
+Started GET "/thankyou" for 127.0.0.1 at Tue Aug 23 11:10:04 -0400 2011
+  Processing by UsersController#thankyou as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY users.id DESC LIMIT 1
+Rendered users/thankyou.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:29 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.7ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"asg", "first_name"=>"asg", "email"=>"m@asfdm.com"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:10:58 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:08 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:16 -0400 2011
+  Processing by UsersController#new as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:25 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.0ms)
+Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:11:32 -0400 2011
+  Processing by UsersController#index as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:11:32 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.8ms)
+Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/thankyou" for 127.0.0.1 at Tue Aug 23 11:11:45 -0400 2011
+  Processing by UsersController#thankyou as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY users.id DESC LIMIT 1[0m
+Rendered users/thankyou.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:20:53 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.1ms)
+Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Aug 23 11:21:09 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"ag", "first_name"=>"agd", "email"=>"mawatg@m.com"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'mawatg@m.com') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "last_name", "updated_at", "email", "first_name") VALUES ('2011-08-23 15:21:09.266380', 'ag', '2011-08-23 15:21:09.266380', 'mawatg@m.com', 'agd')[0m
+Redirected to http://0.0.0.0:3000/thankyou
+Completed 302 Found in 10ms
+
+
+Started GET "/thankyou" for 127.0.0.1 at Tue Aug 23 11:21:09 -0400 2011
+  Processing by UsersController#thankyou as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY users.id DESC LIMIT 1
+Rendered users/thankyou.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:21:29 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.0ms)
+Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Aug 23 11:21:53 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"adfg", "first_name"=>"agd", "email"=>"masgd@asfdm.com"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'masgd@asfdm.com') LIMIT 1[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO "users" ("updated_at", "first_name", "last_name", "created_at", "email") VALUES ('2011-08-23 15:21:53.085387', 'agd', 'adfg', '2011-08-23 15:21:53.085387', 'masgd@asfdm.com')
+Redirected to http://0.0.0.0:3000/thankyou
+Completed 302 Found in 10ms
+
+
+Started GET "/thankyou" for 127.0.0.1 at Tue Aug 23 11:21:53 -0400 2011
+  Processing by UsersController#thankyou as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY users.id DESC LIMIT 1[0m
+Rendered users/thankyou.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:21:59 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:22:15 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.2ms)
+Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:22:20 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:27:44 -0400 2011
+
+SyntaxError (/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/application_controller.rb:10: syntax error, unexpected tASSOC, expecting kEND
+      :alert =>  = "Unauthorized access"
+               ^):
+  app/controllers/users_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:27:56 -0400 2011
+
+SyntaxError (/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/application_controller.rb:10: syntax error, unexpected tASSOC, expecting kEND
+      :alert => "Unauthorized access"
+               ^):
+  app/controllers/users_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:28:38 -0400 2011
+
+SyntaxError (/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/application_controller.rb:10: syntax error, unexpected tASSOC, expecting kEND
+      :notice => ‘This is a flash message’
+                ^):
+  app/controllers/users_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:28:56 -0400 2011
+
+SyntaxError (/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/application_controller.rb:10: syntax error, unexpected tASSOC, expecting kEND
+      :notice => 'This is a flash message'
+                ^):
+  app/controllers/users_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:30:06 -0400 2011
+
+SyntaxError (/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/application_controller.rb:10: syntax error, unexpected tASSOC, expecting kEND
+      :notice => 'User was successfully updated.'
+                ^):
+  app/controllers/users_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:30:19 -0400 2011
+
+SyntaxError (/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/application_controller.rb:10: syntax error, unexpected tASSOC, expecting kEND
+      :notice => 'User was successfully updated.';
+                ^):
+  app/controllers/users_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.8ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:36:04 -0400 2011
+
+SyntaxError (/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/application_controller.rb:10: syntax error, unexpected tASSOC, expecting kEND
+      :notice => 'User was successfully updated.'
+                ^):
+  app/controllers/users_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:37:56 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (4.2ms)
+Rendered users/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:38:03 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 39ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:39:06 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:39:07 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:39:15 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 11:40:06 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:02:23 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:02:44 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:02:47 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:09:45 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 12:09:50 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (2.9ms)
+Rendered users/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:09:53 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Aug 23 12:10:16 -0400 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:10:25 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:11:09 -0400 2011
+
+ActionController::RoutingError (undefined local variable or method `request' for ApplicationController:Class):
+  app/controllers/application_controller.rb:3
+  app/controllers/users_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:12:43 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:12:52 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:13:02 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:13:32 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 12:13:41 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 12:46:05 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.2ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:46:11 -0400 2011
+
+ActionController::RoutingError (No route matches "/login"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:46:50 -0400 2011
+
+LoadError (Expected /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/sessions_controller.rb to define SessionsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:47:26 -0400 2011
+
+LoadError (Expected /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/sessions_controller.rb to define SessionsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:47:52 -0400 2011
+
+LoadError (Expected /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/sessions_controller.rb to define SessionsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:48:03 -0400 2011
+
+ActionController::RoutingError (No route matches "/login"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:48:12 -0400 2011
+
+LoadError (Expected /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/sessions_controller.rb to define SessionsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:49:09 -0400 2011
+
+LoadError (Expected /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/sessions_controller.rb to define SessionsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:49:31 -0400 2011
+
+AbstractController::ActionNotFound (The action 'new' could not be found for SessionsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:49:47 -0400 2011
+  Processing by SessionsController#create as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 12:49:47 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.5ms)
+Rendered users/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 12:49:55 -0400 2011
+  Processing by SessionsController#create as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 12:49:56 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.9ms)
+Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 16ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:16:27 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.4ms)
+Rendered users/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:19:53 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (4.3ms)
+Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:19:56 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.7ms)
+Rendered users/new.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:20:00 -0400 2011
+  Processing by SessionsController#create as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:20:00 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.4ms)
+Rendered users/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:20:31 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.8ms)
+Rendered users/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:20:35 -0400 2011
+  Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 61ms
+
+ActionView::MissingTemplate (Missing template sessions/new with {:formats=>[:html], :handlers=>[:rhtml, :rxml, :erb, :builder, :rjs], :locale=>[:en, :en]} in view paths "/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views"):
+  app/controllers/sessions_controller.rb:4:in `new'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:21:26 -0400 2011
+  Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template sessions/new with {:formats=>[:html], :handlers=>[:rhtml, :rxml, :erb, :builder, :rjs], :locale=>[:en, :en]} in view paths "/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views"):
+  app/controllers/sessions_controller.rb:4:in `new'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:21:32 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.6ms)
+Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:21:54 -0400 2011
+  Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template sessions/new with {:handlers=>[:rjs, :rhtml, :rxml, :erb, :builder], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views"):
+  app/controllers/sessions_controller.rb:4:in `new'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:22:43 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_rhtml___219234725_2203256540_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.rhtml:2)
+Rendered sessions/new.rhtml within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 13:23:01 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:23:01 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (5.1ms)
+Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 44ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 13:23:09 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:23:09 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.1ms)
+Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 13:23:16 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:23:24 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_rhtml___219234725_2202871600_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.rhtml:2)
+Rendered sessions/new.rhtml within layouts/application (38.6ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 13:23:29 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"FfEt5oX9Sxj+7ZZsUWaKNYx+lwkZ4Dl5sGylG0DGwmY=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:23:29 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.8ms)
+Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 13:23:35 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 13:24:26 -0400 2011
+
+ActionController::RoutingError (No route matches "/logout"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 13:24:40 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/login
+Completed 302 Found in 0ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:24:41 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2204514760_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:2)
+Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:25:29 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2204079840_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:2)
+Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 13:25:33 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:25:33 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (34.4ms)
+Rendered users/new.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:27:36 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2204437060_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:2)
+Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 13:27:40 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ecoD32fbcE75KwF3FbtMzUjNH7MOJJ075kaD/5HBVjo=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:27:40 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.5ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:28:31 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.7ms)
+Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:33:15 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (4.4ms)
+Rendered users/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 13:33:41 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:33:42 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (25.7ms)
+Rendered users/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:33:57 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2204443700_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:2)
+Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 13:34:01 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"+08OLMeymj0sPTskVzvpDQeKxYlCy7klnami7BVaFsQ=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:34:01 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.4ms)
+Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:34:25 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.8ms)
+Rendered users/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:34:35 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (4.2ms)
+Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:34:41 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2204643540_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:2)
+Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 13:34:49 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"+08OLMeymj0sPTskVzvpDQeKxYlCy7klnami7BVaFsQ=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:34:49 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.6ms)
+Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:36:51 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (4.0ms)
+Rendered users/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:40:50 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.6ms)
+Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 13:40:54 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2204602500_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:2)
+Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 13:40:59 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"+08OLMeymj0sPTskVzvpDQeKxYlCy7klnami7BVaFsQ=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 13:40:59 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at Tue Aug 23 13:46:41 -0400 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+Rendered users/_form.html.erb (3.4ms)
+Rendered users/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at Tue Aug 23 13:56:27 -0400 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+Rendered users/_form.html.erb (4.4ms)
+Rendered users/edit.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/4" for 127.0.0.1 at Tue Aug 23 13:56:48 -0400 2011
+  Processing by UsersController#update as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"+08OLMeymj0sPTskVzvpDQeKxYlCy7klnami7BVaFsQ=", "utf8"=>"\342\234\223", "id"=>"4", "user"=>{"last_name"=>"ag", "first_name"=>"agdasdf", "email"=>"mawatg@m.com"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'mawatg@m.com') AND ("users".id <> 4) LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mUPDATE "users" SET "updated_at" = '2011-08-23 17:56:48.811769', "first_name" = 'agdasdf' WHERE "users"."id" = 4[0m
+Redirected to http://0.0.0.0:3000/users/4
+Completed 302 Found in 89ms
+
+
+Started GET "/users/4" for 127.0.0.1 at Tue Aug 23 13:56:48 -0400 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 13:56:53 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Tue Aug 23 13:57:05 -0400 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show" for 127.0.0.1 at Tue Aug 23 13:57:47 -0400 2011
+
+ActionController::RoutingError (No route matches "/show"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/show/2" for 127.0.0.1 at Tue Aug 23 13:57:57 -0400 2011
+
+ActionController::RoutingError (No route matches "/show/2"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 13:58:50 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.9ms)
+Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 13:58:58 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (54.4ms)
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at Tue Aug 23 13:59:12 -0400 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+Rendered users/_form.html.erb (3.8ms)
+Rendered users/edit.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:05:32 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:09:52 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/5" for 127.0.0.1 at Tue Aug 23 14:10:00 -0400 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+08OLMeymj0sPTskVzvpDQeKxYlCy7klnami7BVaFsQ=", "id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = 5
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 8ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:10:01 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (50.7ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at Tue Aug 23 14:10:08 -0400 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/4" for 127.0.0.1 at Tue Aug 23 14:10:28 -0400 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+08OLMeymj0sPTskVzvpDQeKxYlCy7klnami7BVaFsQ=", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = 4
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 7ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:10:28 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:10:59 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/3" for 127.0.0.1 at Tue Aug 23 14:11:00 -0400 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+08OLMeymj0sPTskVzvpDQeKxYlCy7klnami7BVaFsQ=", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = 3
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 49ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:11:00 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at Tue Aug 23 14:11:04 -0400 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+08OLMeymj0sPTskVzvpDQeKxYlCy7klnami7BVaFsQ=", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = 1[0m
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 8ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:11:04 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:11:47 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:12:26 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:12:47 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:13:07 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:13:27 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:13:39 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:13:47 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:14:40 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:14:52 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:15:05 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:15:19 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:15:50 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:16:32 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:19:04 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:19:24 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:21:17 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:21:27 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:53:42 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:54:06 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:54:18 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:54:41 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:54:51 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 14:55:00 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:12:50 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:14:34 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:14:51 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:15:04 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:15:23 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 43ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Tue Aug 23 15:15:29 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.4ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Aug 23 15:15:46 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"+08OLMeymj0sPTskVzvpDQeKxYlCy7klnami7BVaFsQ=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"smith", "first_name"=>"joe", "email"=>"js3434@lsdld.com"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'js3434@lsdld.com') LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("created_at", "first_name", "last_name", "email", "updated_at") VALUES ('2011-08-23 19:15:46.779256', 'joe', 'smith', 'js3434@lsdld.com', '2011-08-23 19:15:46.779256')
+Redirected to http://0.0.0.0:3000/thankyou
+Completed 302 Found in 11ms
+
+
+Started GET "/thankyou" for 127.0.0.1 at Tue Aug 23 15:15:46 -0400 2011
+  Processing by UsersController#thankyou as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY users.id DESC LIMIT 1[0m
+Rendered users/thankyou.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:15:54 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:16:20 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:16:31 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:16:46 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:16:52 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:17:01 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:17:16 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:17:29 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:17:40 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 15:18:07 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 15:18:07 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.2ms)
+Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:18:13 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 15:18:47 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2203146800_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:2)
+Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 15:19:57 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2202785040_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 15:20:49 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2202669740_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 15:21:09 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2204169980_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 15:21:19 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2203588440_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 15:23:44 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"j2y1iDhGlhDC+pkZ0URF9T2rLDKKvlPTOz6SqgbzL8I=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:23:44 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 15:24:40 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:24:40 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:25:11 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 15:25:18 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2202501580_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 15:25:22 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"sCVeXK3gIQmI0lG5SXnpj12G71rO/vXc69ULi2OOnxs=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:25:22 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 54ms (Views: 50.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:29:23 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+ERROR: compiling _app_views_users_index_html_erb__149014874_2204226680_0 RAISED compile error
+/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/users/index.html.erb:42: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _app_views_users_index_html_erb__149014874_2204226680_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "users/index";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<style>
+    td, th {
+		border: 1px solid #e5e5e5;
+		padding: 4px;
+	}
+	th {
+		background-color: #f6f6f7;
+		color: #444;
+	}
+</style>
+<p id="notice">
+	');@output_buffer.append= ( notice );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+'); if admin? 
+@output_buffer.safe_concat('
+<h1>Listing users</h1>
+<table>
+	<tr>
+		<th>First name</th>
+		<th>Last name</th>
+		<th>Email</th>
+		<th colspan="3">Actions</th>
+	</tr>
+');@output_buffer.append_if_string= 	 @users.each do |user| 
+@output_buffer.safe_concat('	<tr>
+		<td>');@output_buffer.append= ( user.first_name );@output_buffer.safe_concat('</td>
+		<td>');@output_buffer.append= ( user.last_name );@output_buffer.safe_concat('</td>
+		<td>');@output_buffer.append= ( user.email );@output_buffer.safe_concat('</td>
+		<td>');@output_buffer.append= ( link_to 'Show', user );@output_buffer.safe_concat('</td>
+		<td>');@output_buffer.append= ( link_to 'Edit', edit_user_path(user) );@output_buffer.safe_concat('</td>
+		<td>');@output_buffer.append= ( button_to 'Delete', user, :alert => 'Are you sure?', :method => :delete );@output_buffer.safe_concat('</td>
+	</tr>
+');	 end 
+@output_buffer.safe_concat('</table>
+<br />
+');@output_buffer.append= ( link_to 'New User', new_user_path );@output_buffer.safe_concat(' ');@output_buffer.append= ( link_to 'Logout', logout_path );@output_buffer.safe_concat('
+'); end 
+ else 
+@output_buffer.safe_concat('<p>Did you want to create a ');@output_buffer.append= ( link_to 'New User', new_user_path );@output_buffer.safe_concat(' ?</p>
+'); end 
+@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/users/index.html.erb:42:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/controllers/users_controller.rb:9:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:441:in `_run__434435962__process_action__199225275__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (compile error
+/Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/users/index.html.erb:42: syntax error, unexpected kENSURE, expecting $end):
+    39: <p>Did you want to create a <%= link_to 'New User', new_user_path %> ?</p>
+    40: <% end %>
+  app/views/users/index.html.erb:42:in `compile'
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:31:30 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 15:31:35 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:31:35 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:31:45 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 47ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 15:32:16 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2204339960_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 15:32:22 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"eBK3xH2wNpegC5s/oQo5qq6xksAbfH3l2jSkWrYCNgQ=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:32:22 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:32:46 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:33:06 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/2" for 127.0.0.1 at Tue Aug 23 15:33:23 -0400 2011
+  Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eBK3xH2wNpegC5s/oQo5qq6xksAbfH3l2jSkWrYCNgQ=", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = 2
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 8ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:33:23 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 15:34:13 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (2.9ms)
+Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:34:28 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 15:34:38 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:34:38 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Tue Aug 23 15:34:42 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.1ms)
+Rendered users/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Aug 23 15:35:02 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0jwO+DzMubQjw8+lgNhiMdVwrsxpG2USs8NU+3H+yAs=", "utf8"=>"\342\234\223", "user"=>{"last_name"=>"werhweh", "first_name"=>"sdgherh", "email"=>"hwerh@sdhf.com"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'hwerh@sdhf.com') LIMIT 1
+  [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "last_name", "first_name", "updated_at", "email") VALUES ('2011-08-23 19:35:02.326285', 'werhweh', 'sdgherh', '2011-08-23 19:35:02.326285', 'hwerh@sdhf.com')[0m
+Redirected to http://0.0.0.0:3000/thankyou
+Completed 302 Found in 10ms
+
+
+Started GET "/thankyou" for 127.0.0.1 at Tue Aug 23 15:35:02 -0400 2011
+  Processing by UsersController#thankyou as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY users.id DESC LIMIT 1
+Rendered users/thankyou.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:35:09 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 15:35:24 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2202440760_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 15:35:28 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"0jwO+DzMubQjw8+lgNhiMdVwrsxpG2USs8NU+3H+yAs=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:35:28 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:36:14 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:36:34 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:36:49 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:37:08 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:37:23 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:37:40 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:37:42 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:37:43 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:38:03 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:39:21 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:39:42 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 46ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:39:54 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:40:33 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:40:50 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:41:03 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:41:16 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 46ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:41:24 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:41:46 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:43:13 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:43:43 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:46:50 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 52ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:48:41 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:49:01 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:50:24 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:50:47 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:51:15 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:51:55 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:52:29 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:53:08 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:53:17 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:53:36 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 15:53:53 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 16:00:49 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:00:49 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 16:01:03 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (3.5ms)
+Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/edit/2" for 127.0.0.1 at Tue Aug 23 16:05:11 -0400 2011
+
+ActionController::RoutingError (No route matches "/edit/2"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/edit/2" for 127.0.0.1 at Tue Aug 23 16:05:22 -0400 2011
+
+ActionController::RoutingError (No route matches "/users/edit/2"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/" for 127.0.0.1 at Tue Aug 23 16:05:29 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 16:05:40 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2203516540_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 16:05:45 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8eSrpo5LddAeH2wGVS1Ud0HJUdv60hHQI/9tToheqZY=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:05:45 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at Tue Aug 23 16:05:53 -0400 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Rendered users/_form.html.erb (3.6ms)
+Rendered users/edit.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:06:02 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 16:06:14 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:06:14 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at Tue Aug 23 16:06:17 -0400 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered users/_form.html.erb (3.7ms)
+Rendered users/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at Tue Aug 23 16:06:34 -0400 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=4):
+  app/controllers/users_controller.rb:48:in `edit'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at Tue Aug 23 16:06:43 -0400 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered users/_form.html.erb (3.6ms)
+Rendered users/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/" for 127.0.0.1 at Tue Aug 23 16:07:18 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at Tue Aug 23 16:08:20 -0400 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered users/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 16:09:05 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2203473900_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 48ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 16:09:22 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"mn+/0zlsjYxcUtuUS2b7v8wRdaQ3oyQuBICUTdiZcX4=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:09:22 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at Tue Aug 23 16:09:28 -0400 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at Tue Aug 23 16:09:36 -0400 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Rendered users/_form.html.erb (3.5ms)
+Rendered users/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:09:40 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at Tue Aug 23 16:09:45 -0400 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 16:09:54 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:09:54 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at Tue Aug 23 16:09:57 -0400 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+Rendered users/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at Tue Aug 23 16:10:05 -0400 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at Tue Aug 23 16:10:46 -0400 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 16:10:53 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2202686060_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 16:10:57 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"0xlLPidF2xKVl8/BGDabeoYNdPQCt4sEo6mDEyjOZn8=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:10:57 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:12:44 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 59ms (Views: 55.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Aug 23 16:12:45 -0400 2011
+  Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:12:45 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:12:59 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Aug 23 16:13:04 -0400 2011
+  Processing by SessionsController#new as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_sessions_new_html_erb__657716794_2202639220_0 at /Applications/Aptana Studio 3/AptanaStudio3.app/Contents/MacOS/workspace/QuiverShack/app/views/sessions/new.html.erb:3)
+Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Aug 23 16:13:21 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"MoziSfGPNJxvZ15yLgIcMj8BPh4N9uFKM9UvRs+NgOs=", "utf8"=>"\342\234\223", "password"=>"[FILTERED]"}
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 0ms
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:13:21 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/users" for 127.0.0.1 at Tue Aug 23 16:21:42 -0400 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 28ms (Views: 11.6ms | ActiveRecord: 0.3ms)

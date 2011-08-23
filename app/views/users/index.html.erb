@@ -1,27 +1,50 @@
-<h1>Listing users</h1>
-
+<style>
+	body{
+		background-color: #fcfcfc;
+	}
+	table{
+		border:1px solid #f1f1f1;
+	}
+	td, th {
+		border: 1px solid #f7f7f7;
+		padding: 4px;
+	}
+	th {
+		background-color: #f4f4f5;
+		color: #444;
+		text-shadow: 0 1px 0 white;
+	}
+</style>
+<p id="notice">
+	<%= notice %>
+</p>
+<% if admin? %> <h1>Listing users</h1>
 <table>
-  <tr>
-    <th>First name</th>
-    <th>Last name</th>
-    <th>Email</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.first_name %></td>
-    <td><%= user.last_name %></td>
-    <td><%= user.email %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+	<tr>
+		<th>First name</th>
+		<th>Last name</th>
+		<th>Email</th>
+		<th colspan="3">Actions</th>
+	</tr>
+	<% @users.each do |user| %>
+	<tr>
+		<td><%= user.first_name %></td>
+		<td><%= user.last_name %></td>
+		<td><%= user.email %></td>
+		<td><%= link_to 'Show', user %></td>
+		<td><%= link_to 'Edit', edit_user_path(user) %></td>
+		<td><%= button_to 'Delete', user, :alert => 'Are you sure?', :method => :delete %></td>
+	</tr>
+	<% end %>
 </table>
-
 <br />
-
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'New User', new_user_path %> <%= link_to 'Logout', logout_path %>
+<% end %>
+<% if not admin? %>
+<p>
+	Did you want to create a <%= link_to 'New User', new_user_path %> ?
+</p>
+<p>
+	You can <%= link_to 'Login', login_path %> as an admin to view users.
+</p>
+<% end %> 

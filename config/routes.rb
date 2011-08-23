@@ -1,8 +1,10 @@
 QuiverSplash::Application.routes.draw do
   resources :users
+  resources :sessions
   match '/thankyou',    :to => 'users#thankyou'
   root :to => 'users#new'
-  match "users/check_email", :to => "users#check_email"
+  match "login", :to => "sessions#new"
+  match "logout", :to => "sessions#destroy"
 
 
   # The priority is based upon order of creation:
